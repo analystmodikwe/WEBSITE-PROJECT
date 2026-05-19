@@ -156,8 +156,12 @@ CSS Grid
 5. Technical Approach 
 
 HTML Structure   
- 
-Semantic HTML5 elements used: <header>, <nav>, <section>, <main>,  <footer>, <form>. 
+ header
+ nav 
+ section
+ main 
+ footer
+ form
 
 CSS Methods Used 
 
