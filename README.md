@@ -157,10 +157,10 @@ CSS Grid
 
 HTML Structure 
 
-<header>   → navigation bar 
-<section> → hero or page heading 
-<main>     → page content 
-<footer>   → copyright 
+<header>   
+<section>  
+<main>     
+<footer>    
  
 
 Semantic HTML5 elements used: <header>, <nav>, <section>, <main>,  <footer>, <form>. 
