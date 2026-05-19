@@ -1,0 +1,139 @@
+
+/* contact body background */
+.contact-body{
+  background: url('images/about2.webp')
+}
+
+
+/*------------------------------ The start of Header ------------------------------ */
+/* NAVIGATION BAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:1rem 5%;
+  background:#0A2647;
+}
+
+/* logo (THOKOZA'S CARWASH)  */ 
+.car-wash-name{
+  color:#adacb1;
+}
+
+/* navigation links positioning */
+.nav-links{
+  display:flex;
+  list-style:none;
+  gap: 10px;
+  flex-direction: column;
+  padding: 0;
+    
+}
+
+/* this is for the navigation links color */
+.nav-links a{ 
+color:#ffffff;
+text-decoration:none;
+    
+}
+
+.nav-links a:hover {
+  color: #1a73e8;
+}
+/*------------------------------ The end of Header ------------------------------ */
+
+
+/* -------------------------------- Contact information  start-------------------------------- */
+
+
+.contact-us-area {
+  background-color: whitesmoke;
+  border: 2px solid #0A2647;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #0A2647;
+  text-align: center;
+  padding: 1 rem;
+}
+
+/* (flex container)i set the boxes horizontally  */
+.contact-section {
+  display:flex;
+  justify-content: center;
+  gap: 1.5rem;
+  
+}
+
+/* phone number, email, and address box */
+.contact-info {
+  background-color: rgb(7, 73, 160);
+  border-top: 4px solid #0A2647;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 220px;
+  text-align: center;
+}
+
+.contact-info:hover {
+  background-color: #0A2647;
+  color: white;
+}
+
+/* trading hours box */
+.trading-info {
+  background-color: rgb(7, 73, 160);
+  border-top: 4px solid #0A2647;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 220px;
+  text-align: center;
+}
+
+.trading-info:hover {
+  background-color: #0A2647;
+  color: white;
+}
+
+/* send us a message box */
+.contact-form {
+  background-color: rgb(7, 73, 160);
+  border-top: 4px solid #0A2647;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 220px;
+  text-align: center;
+}
+
+.btn:hover {
+background-color: #0c72e7;
+color: white;
+}
+
+.contact-form:hover {
+  background-color: #0A2647;
+  color: white;
+}
+
+
+/* -------------------------------- Contact information  end-------------------------------- */
+
+
+
+/* ---------------------------------FOOTER start-------------------------------- */
+.footer{
+  color: rgb(135, 240, 14);
+  text-align: center;
+  padding:1rem 5%;
+  background:#0A2647;
+}
+/* ---------------------------------FOOTER end-------------------------------- */
+
+/*---------------------------- media queries----------------- */
+
+/* the navigation links will show horizontal on large screen and vertical on smaller devices */
+@media (min-width: 768px){
+  .nav-links {
+    flex-direction: row;
+    gap: 15px      
+  }
+}

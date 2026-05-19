@@ -1,0 +1,193 @@
+     
+
+/* removes default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*----------------------------------------------------- BODY */
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+} */
+
+/* ---------------------------------------------------NAVBAR ── */
+
+/* navigation bar styling */
+.navbar {
+
+  background-color: #03264d;
+  color: white;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.car-wash-name {
+color: white;
+font-size: 1.5rem;
+text-align: center;
+  
+}
+
+/* navigation links positioning */
+.nav-links{
+  display:flex;
+  list-style:none;
+  gap: 10px;
+  flex-direction: column;
+  padding: 0;
+    
+}
+
+/* this is for the navigation links color */
+.nav-links a{ 
+  color:#ffffff;
+  text-decoration:none;
+    
+}
+
+.nav-links a:hover {
+  color: #1a73e8;
+}
+
+
+/* -------------------------------------------------------- INTRO */
+.intro {
+  background-color: #0b084f;
+  text-align: center;
+  padding: 0%;
+  font-size: 1rem;
+  color: #ebe3e3;
+}
+
+/* -------------------------------------------------------- VEHICLE SECTION */
+
+
+.vehicle-section {
+  padding: 2rem;
+  text-align: center; 
+}
+
+.vehicle-section h2 {
+  font-size: 1.5rem;
+  color: #0A2647;
+  margin-bottom: 1rem;
+}
+
+/* i positioned everything to the center */
+.vehicle-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  
+}
+
+/* create small boxes foe vehicle types */
+.vehicle-box {
+  background-color: white;
+  border: 2px solid #0A2647;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #0A2647;
+  cursor: default;
+}
+
+/* change color i hover over the vehicle box */
+.vehicle-box:hover {
+  background-color: #0454af;
+  color: white;
+}
+
+/*  --------------------------------------------SERVICE CARDS  */
+.services-section {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+/* add space betwee(what we offer) and the cards*/
+.services-section h2 {
+  font-size: 1.5rem;
+  color: #0A2647;
+  margin-bottom: 1.5rem;
+}
+
+/* i set the card row to be horizontally in the center */
+.cards-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* made the border top of the cards blue */
+.card {
+  background-color: white;
+  border-top: 4px solid #0A2647;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 220px;
+  text-align: center;
+}
+
+/* the hover color will be blue */
+.card:hover {
+  background-color: #0A2647;
+}
+/* change the color of h3 (basic, deluxe and interior wash) when i hover over them */
+.card:hover h3 {
+  color: white;
+}
+
+
+.card h3 {
+  font-size: 1.1rem;
+  color: #0A2647;
+  margin-bottom: 3.5rem;
+}
+
+/* change the color of p (paragraphs) when i hover over them */
+.card:hover p {
+  color: white;
+}
+
+/* default color of the paragraph before you hovor over  */
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+/* the prices (50,100,80,130) */
+.price {
+  display: inline-block;
+  margin-top: 0.8rem;
+  background-color: #1a73e8;
+  color: white;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/*--------------------------------------------------------      FOOTER */
+.footer {
+  background-color: #0A2647;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: auto;
+}
+
+/* ----------------------------------------------------       MEDIA QUERIES  */
+
+/* the navigation links will show horizontal on large screen and vertical on smaller devices */
+@media (min-width: 768px){
+  .nav-links {
+    flex-direction: row;
+    gap: 15px      
+  }
+}
