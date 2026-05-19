@@ -184,10 +184,63 @@ text-align: center;
 
 /* ----------------------------------------------------       MEDIA QUERIES  */
 
-/* the navigation links will show horizontal on large screen and vertical on smaller devices */
-@media (min-width: 768px){
-  .nav-links {
-    flex-direction: row;
-    gap: 15px      
+/* adjust the size of everything if the screen is 768px or less */
+@media(max-width: 768px){
+  .navbar{
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+/* change the font size of the car wash name */
+  .car-wash-name {
+    font-size: 1rem
+  }
+
+  .nav-links{
+    flex-direction: column;
+    align-items: center;
+    gap: 0,5rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .intro{
+    padding: 1rem;
+  }
+
+  .intro h1 {
+    font-size: 1.3rem;
   }
 }
+
+/* Vehicle row wrap and center */
+  .vehicle-row {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  .vehicle-box {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  /* Service cards stack into 2 columns on mobile */
+  .cards-row {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  /* Cards take up half the screen on mobile */
+  .card {
+    width: calc(50% - 1rem);
+    min-width: 140px;
+  }
+
+  .services-section {
+    padding: 1rem;
+  }

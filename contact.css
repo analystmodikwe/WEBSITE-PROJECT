@@ -130,10 +130,87 @@ color: white;
 
 /*---------------------------- media queries----------------- */
 
-/* the navigation links will show horizontal on large screen and vertical on smaller devices */
-@media (min-width: 768px){
+
+
+/* adjust the size of everything if the screen is 768px or less */
+@media(max-width: 768px){
   .nav-links {
     flex-direction: row;
-    gap: 15px      
+    gap: 15px;
+  }
+
+  /* Contact boxes side by side on tablet */
+  .contact-section {
+    flex-wrap: wrap;
+    align-items: flex-start;
   }
 }
+
+/* --- MOBILE (max 767px) --- */
+@media (max-width: 767px) {
+
+  /* Navbar stacks vertically */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .car-wash-name {
+    font-size: 1rem;
+  }
+
+  /* Nav links wrap and center */
+  .nav-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  /* Contact header area */
+  .contact-us-area {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  /* Stack all contact boxes vertically */
+  .contact-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  /* Make contact boxes full width on mobile */
+  .contact-info,
+  .trading-info,
+  .contact-form {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  /* Form inputs: full width */
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Submit button: full width */
+  .btn {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+  }
+
+  /* Footer on mobile */
+  .footer {
+    padding: 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+

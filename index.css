@@ -100,10 +100,53 @@
 
 /* media queries */
 
-/* the navigation links will show horizontal on large screen and vertical on smaller devices */
-@media (min-width: 768px){
+
+/* adjust the size of everything if the screen is 768px or less */
+@media(max-width: 768px){
+  /* Navbar: stack items, center them */
+  .navbar {
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  /* Shrink the title on small screens */
+  .car-wash-name {
+    font-size: 1rem;
+  }
+
+  /* Nav links: wrap and center vertically */
   .nav-links {
-    flex-direction: row;
-    gap: 15px      
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  /* Hero: reduce padding so content fits */
+  .hero-content {
+    padding: 1rem;
+    margin: 1rem;
+    max-height: none;
+  }
+
+  .hero-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  /* Button: full width on mobile */
+  .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem;
   }
 }
+
+
