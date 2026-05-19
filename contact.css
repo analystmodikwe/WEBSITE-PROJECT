@@ -25,7 +25,7 @@
   display:flex;
   list-style:none;
   gap: 10px;
-  flex-direction: column;
+  flex-direction: row;
   padding: 0;
     
 }
@@ -135,7 +135,7 @@ color: white;
 /* adjust the size of everything if the screen is 768px or less */
 @media(max-width: 768px){
   .nav-links {
-    flex-direction: row;
+    flex-direction: column;
     gap: 15px;
   }
 
